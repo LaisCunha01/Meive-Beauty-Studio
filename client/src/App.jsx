@@ -1,122 +1,118 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <main className="home">
+
+      <header className="navbar">
+        <div className="logo">
+          <span className="logo-main">MEIVE</span>
+          <span className="logo-sub">BEAUTY STUDIO</span>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+
+        <nav className="nav-links">
+          <a href="#servicos">SERVIÇOS</a>
+          <a href="#produtos">PRODUTOS</a>
+          <a href="#sobre">SOBRE</a>
+          <a href="#contato">CONTATO</a>
+        </nav>
+
+        <div className="nav-actions">
+          <button className="cart-button" aria-label="Carrinho">
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            >
+              <path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6" />
+              <circle cx="10" cy="20" r="1" />
+              <circle cx="18" cy="20" r="1" />
+            </svg>
+          </button>
+
+          <a href="#agendamento" className="schedule-button">
+            AGENDAR
+          </a>
+        </div>
+      </header>
+
+      <section className="hero">
+
+        <div className="hero-background"></div>
+        <div className="hero-overlay"></div>
+
+        <div className="hero-content">
+
+          <div className="hero-title">
+            <span>MEIVE</span>
+            <span>BEAUTY</span>
+            <span>STUDIO</span>
+          </div>
+
+          <p className="hero-description">
+            Transformando olhares através da Minha Arte.
           </p>
+
+          <div className="hero-buttons">
+            <a href="#agendamento" className="primary-button">
+              AGENDAR AGORA
+            </a>
+
+            <a href="#servicos" className="secondary-button">
+              VER SERVIÇOS
+            </a>
+          </div>
+
+          <div className="stats">
+
+            <div className="stat">
+              <strong>500+</strong>
+              <span>CLIENTES</span>
+            </div>
+
+            <div className="stat">
+              <strong>3 anos</strong>
+              <span>EXPERIÊNCIA</span>
+            </div>
+
+            <div className="stat">
+              <strong>98%</strong>
+              <span>5 ESTRELAS</span>
+            </div>
+
+          </div>
+
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+
+        <div className="featured-card">
+
+          <span className="card-label">
+            MAIS POPULAR
+          </span>
+
+          <h2>
+            VOLUME RUSSO
+          </h2>
+
+          <p>
+            O lash que vira vício — cheio, dramático
+            e perfeito.
+          </p>
+
+          <div className="card-footer">
+            <strong>R$ 280</strong>
+            <span>3 horas</span>
+          </div>
+
+        </div>
+
       </section>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;
