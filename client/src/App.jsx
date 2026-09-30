@@ -174,6 +174,45 @@ function App() {
           ))}
         </div>
       </section>
+      
+  
+      <section id="contato" className="contact-section">
+    
+      <div className="contact-header">
+        <span className="contact-subtitle">AGENDAMENTO</span>
+        <h2 className="contact-title">
+          <span>BORA</span> <span>AGENDAR?</span>
+          <span>Entre em contato e retornamos em até 1 hora.</span>
+        </h2>
+      </div>
+
+      <div className="contact-grid">
+
+ 
+
+    {/* Formulário Simples de Contato */}
+    <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+      <div className="form-group">
+        <label htmlFor="nome">SEU NOME</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="whatsapp">SEU WHATSAPP</label>
+        <input type="text" id="whatsapp" placeholder="(11) 98888-8888" required />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="mensagem">MENSAGEM</label>
+        <textarea id="mensagem" rows="4" placeholder="Como podemos te ajudar?" required></textarea>
+      </div>
+
+      <button type="submit" className="primary-button submit-btn">
+        ENVIAR MENSAGEM
+      </button>
+    </form>
+  </div>
+</section>
 
       <div className="section-divider"></div>
     </main>
