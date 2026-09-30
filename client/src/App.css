@@ -721,3 +721,268 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================
+   FOOTER SITE (IGUAL À IMAGEM)
+   ========================================== */
+.site-footer {
+  background-color: #050505;
+  color: #a0a0a0;
+  padding: 80px 40px 25px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr;
+  gap: 50px;
+  padding-bottom: 60px;
+}
+
+/* Coluna 1 - Marca */
+.footer-logo {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.footer-logo .logo-main {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 38px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+}
+
+.footer-logo .logo-sub {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 2.8px;
+  color: #a91635;
+}
+
+.footer-description {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #666666;
+  padding: 10px 22px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background-color: transparent;
+}
+
+.social-btn:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+/* Títulos */
+.footer-title {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #555555;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Coluna 2 - Horários */
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-list li {
+  display: flex;
+  justify-content: space-between;
+  max-width: 280px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.highlight-time {
+  color: #a91635;
+  font-weight: 500;
+}
+
+.closed-time {
+  color: #444444;
+}
+
+/* Coluna 3 - Contato */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.contact-list .icon {
+  font-size: 15px;
+}
+
+/* Linha de Direitos Autorais */
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #333333;
+}
+
+.hashtag {
+  color: #5c1b50;
+  font-weight: 600;
+}
+
+/* MEDIA QUERIES (RESPONSIVIDADE) */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .schedule-list li {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    min-width: auto;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .hero-content {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 220px;
+  }
+
+  .hero-title {
+    font-size: clamp(70px, 17vw, 105px);
+  }
+
+  .stats {
+    width: 100%;
+    max-width: 438px;
+  }
+
+  .featured-card {
+    left: 25px;
+    right: auto;
+    width: 270px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-sub {
+    display: none;
+  }
+
+  .schedule-button {
+    min-width: 80px;
+  }
+
+  .hero {
+    min-height: 750px;
+  }
+
+  .hero-content {
+    justify-content: flex-start;
+    padding-top: 120px;
+    padding-bottom: 220px;
+  }
+
+  .hero-title {
+    font-size: 76px;
+  }
+
+  .hero-description {
+    max-width: 250px;
+    line-height: 1.5;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 190px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .stat strong {
+    font-size: 23px;
+  }
+
+  .featured-card {
+    bottom: 20px;
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
