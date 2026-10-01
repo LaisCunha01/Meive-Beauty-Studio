@@ -352,7 +352,7 @@ function App() {
             </p>
             <div className="footer-socials">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/nineris.studio/"
                 target="_blank"
                 rel="noreferrer"
                 className="social-btn"

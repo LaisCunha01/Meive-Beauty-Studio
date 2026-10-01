@@ -32,8 +32,8 @@ button {
 }
 
 .navbar {
-  position: absolute;
-  z-index: 20;
+  position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
@@ -43,6 +43,8 @@ button {
   padding: 0 19px 0 20px;
   background: rgba(8, 8, 8, 0.94);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #0f0f0f;
+  box-sizing: border-box;
 }
 
 .logo {
