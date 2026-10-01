@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import BeautyMarquee from "./components/BeautyMarquee";
+import AboutSection from "./components/Sobre";
 
 function App() {
 
@@ -150,7 +151,6 @@ function App() {
 
       <BeautyMarquee />
 
-      {/* Seção de Serviços Integrada */}
       <section id="servicos" className="services-section">
         <div className="services-header-container">
           <div className="services-titles">
@@ -186,6 +186,8 @@ function App() {
           ))}
         </div>
       </section>
+
+      <AboutSection />
 
       <section id="contato" className="contact-section">
         <div className="contact-header">
