@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import BeautyMarquee from "./components/BeautyMarquee";
 import AboutSection from "./components/Sobre";
+import ProdutosSection from "./components/ProdutosHome";
 
 function App() {
 
@@ -188,6 +189,8 @@ function App() {
       </section>
 
       <AboutSection />
+
+      <ProdutosSection />
 
       <section id="contato" className="contact-section">
         <div className="contact-header">
