@@ -86,7 +86,7 @@ function App() {
             </svg>
           </button>
 
-          <a href="#agendamento" className="schedule-button">
+          <a href="#contato" className="schedule-button">
             AGENDAR
           </a>
         </div>
@@ -108,7 +108,7 @@ function App() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#agendamento" className="primary-button">
+            <a href="#contato" className="primary-button">
               AGENDAR AGORA
             </a>
 
